@@ -147,6 +147,10 @@
   display: flex;
   align-items: stretch;
 
+  @media (min-width: 767px) {
+    top: -4rem;
+  }
+
   .hospital-items {
     position: relative;
     width: 100%;
@@ -162,8 +166,6 @@
       border-radius: 0.5rem;
       z-index: 5;
     }
-
-    
 
     .card-hospital {
       position: relative;
@@ -184,6 +186,7 @@
 
       &:hover {
         background: $second;
+        border-color: $second;
         box-shadow: 1.25rem 0.25rem 3.125rem rgba(255, 199, 31, 0.2);
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
