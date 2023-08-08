@@ -1,71 +1,220 @@
-#quick-link {
-  display: block;
+// #quick-link {
+//   display: block;
+//   position: relative;
+//   z-index: 5;
+//   .wrap-link {
+//     margin-top: -1.5rem !important;
+//     position: relative;
+//     overflow: hidden;
+//     border-radius: 1.25rem;
+//     display: flex;
+//     align-items: stretch;
+//     .wrap-items {
+//       position: relative;
+//       width: 100%;
+//       &:before {
+//         content: "";
+//         position: absolute;
+//         top: 10%;
+//         right: -1px;
+//         width: 1px;
+//         height: 80%;
+//         background: rgba(255, 255, 255, 0.459);
+//         border-radius: 0.5rem;
+//         z-index: 5;
+//       }
+//       &:last-child:before {
+//         opacity: 0;
+//         visibility: hidden;
+//       }
+//       .card {
+//         position: relative;
+//         overflow: hidden;
+//         border: none;
+//         border-radius: 0.375rem;
+//       }
+//       .card-quick-link {
+//         position: relative;
+//         overflow: hidden;
+//         height: 145px;
+//         border-radius: 0;
+//         padding: 1.25rem 0.625rem;
+//         background: $accent;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         -webkit-transition: all 0.3s ease-in-out;
+//         -moz-transition: all 0.3s ease-in-out;
+//         -ms-transition: all 0.3s ease-in-out;
+//         -o-transition: all 0.3s ease-in-out;
+//         transition: all 0.3s ease-in-out;
+//         &:hover {
+//           background: $second;
+//           box-shadow: 1.25rem 0.25rem 3.125rem rgba(255, 199, 31, 0.2);
+//           -webkit-transition: all 0.3s ease-in-out;
+//           -moz-transition: all 0.3s ease-in-out;
+//           -ms-transition: all 0.3s ease-in-out;
+//           -o-transition: all 0.3s ease-in-out;
+//           transition: all 0.3s ease-in-out;
+//           .wrap-title {
+//             color: $accent;
+//             -webkit-transition: all 0.3s ease-in-out;
+//             -moz-transition: all 0.3s ease-in-out;
+//             -ms-transition: all 0.3s ease-in-out;
+//             -o-transition: all 0.3s ease-in-out;
+//             transition: all 0.3s ease-in-out;
+//           }
+//         }
+//         .wrap-img {
+//           width: 65px;
+//           height: 65px;
+//           padding: 13px;
+//           border-radius: 50%;
+//           background: $second;
+//           margin: auto;
+//           margin-bottom: 0.625rem;
+//           img {
+//             position: relative;
+//             z-index: 3;
+//           }
+//         }
+//         .wrap-title {
+//           position: relative;
+//           font-size: 0.938rem;
+//           font-weight: 600;
+//           color: #e8f0fc;
+//           letter-spacing: 0.02rem;
+//           z-index: 3;
+//           margin-bottom: 0;
+//           -webkit-transition: all 0.3s ease-in-out;
+//           -moz-transition: all 0.3s ease-in-out;
+//           -ms-transition: all 0.3s ease-in-out;
+//           -o-transition: all 0.3s ease-in-out;
+//           transition: all 0.3s ease-in-out;
+//         }
+//       }
+//     }
+//   }
+//   .img-contain {
+//     object-fit: contain;
+//     position: 50% 50%;
+//     -webkit-transition: -webkit-transform 0.5s;
+//     transition: -webkit-transform 0.5s;
+//     -o-transition: transform 0.5s;
+//     transition: transform 0.5s;
+//     transition: transform 0.5s, -webkit-transform 0.5s;
+//   }
+
+//   @media (max-width: 767px) {
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+//   background-color: $accent;
+//   z-index: 20;
+//   .wrap-link {
+//     position: relative;
+//     border-radius: 0;
+//   }
+//   }
+// }
+
+// .quick-link-hospital.desktop {
+//   display: block;
+//   margin-top: 0 /*-5%*/;
+// }
+// .quick-link-hospital.mobile {
+//   display: none;
+// }
+.quick-link-hospital {
   position: relative;
+  margin-top: 2.5rem;
   z-index: 5;
-  .wrap-link {
-    margin-top: -1.5rem !important;
+
+  @media (max-width: 767px) {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+  }
+}
+
+.wrap-all-hospital {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  display: flex;
+  align-items: stretch;
+
+  .hospital-items {
     position: relative;
-    overflow: hidden;
-    border-radius: 1.25rem;
-    display: flex;
-    align-items: stretch;
-    .wrap-items {
+    width: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 10%;
+      right: -1px;
+      width: 1px;
+      height: 80%;
+      background: $white;
+      border-radius: 0.5rem;
+      z-index: 5;
+    }
+
+    
+
+    .card-hospital {
       position: relative;
-      width: 100%;
-      &:before {
-        content: "";
-        position: absolute;
-        top: 10%;
-        right: -1px;
-        width: 1px;
-        height: 80%;
-        background: rgba(255, 255, 255, 0.459);
-        border-radius: 0.5rem;
-        z-index: 5;
-      }
-      &:last-child:before {
-        opacity: 0;
-        visibility: hidden;
-      }
-      .card {
-        position: relative;
-        overflow: hidden;
-        border: none;
-        border-radius: 0.375rem;
-      }
-      .card-quick-link {
-        position: relative;
-        overflow: hidden;
-        height: 145px;
-        border-radius: 0;
-        padding: 1.25rem 0.625rem;
-        background: $accent;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+      overflow: hidden;
+      height: 145px;
+      border-radius: 0;
+      border-color: $accent;
+      padding: 1.25rem 0.625rem;
+      background: $accent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background: $second;
+        box-shadow: 1.25rem 0.25rem 3.125rem rgba(255, 199, 31, 0.2);
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -ms-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
-        &:hover {
-          background: $second;
-          box-shadow: 1.25rem 0.25rem 3.125rem rgba(255, 199, 31, 0.2);
+        .hospital-content .hospital-title {
+          color: $accent;
           -webkit-transition: all 0.3s ease-in-out;
           -moz-transition: all 0.3s ease-in-out;
           -ms-transition: all 0.3s ease-in-out;
           -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
-          .wrap-title {
-            color: $accent;
-            -webkit-transition: all 0.3s ease-in-out;
-            -moz-transition: all 0.3s ease-in-out;
-            -ms-transition: all 0.3s ease-in-out;
-            -o-transition: all 0.3s ease-in-out;
-            transition: all 0.3s ease-in-out;
-          }
         }
-        .wrap-img {
+      }
+
+      .hospital-cover {
+        mix-blend-mode: soft-light;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+      }
+
+      .hospital-content {
+        position: relative;
+        text-align: center;
+
+        .hospital-img {
           width: 65px;
           height: 65px;
           padding: 13px;
@@ -73,16 +222,46 @@
           background: $second;
           margin: auto;
           margin-bottom: 0.625rem;
+
           img {
             position: relative;
             z-index: 3;
+
+            @media (max-width: 767px) {
+              max-width: 20px;
+            }
+
+            @media (max-width: 480px) {
+              max-width: 14px;
+            }
+          }
+
+          @media (max-width: 1200px) {
+            width: 58px;
+            height: 58px;
+            padding: 15px;
+          }
+
+          @media (max-width: 767px) {
+            width: 35px;
+            height: 35px;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          @media (max-width: 480px) {
+            width: 25px;
+            height: 25px;
           }
         }
-        .wrap-title {
+
+        .hospital-title {
           position: relative;
           font-size: 0.938rem;
           font-weight: 600;
-          color: #e8f0fc;
+          color: $white;
           letter-spacing: 0.02rem;
           z-index: 3;
           margin-bottom: 0;
@@ -91,17 +270,47 @@
           -ms-transition: all 0.3s ease-in-out;
           -o-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
+
+          @media (max-width: 1200px) {
+            font-size: 1.125rem;
+          }
+
+          @media (max-width: 767px) {
+            font-size: 0.935rem;
+          }
+
+          @media (max-width: 480px) {
+            font-size: 0.65rem;
+            line-height: 120%;
+          }
         }
+      }
+      
+      @media (max-width: 767px) {
+        height: 85px;
+      }
+
+      @media (max-width: 480px) {
+        height: 70px;
       }
     }
   }
-  .img-contain {
-    object-fit: contain;
-    position: 50% 50%;
-    -webkit-transition: -webkit-transform 0.5s;
-    transition: -webkit-transform 0.5s;
-    -o-transition: transform 0.5s;
-    transition: transform 0.5s;
-    transition: transform 0.5s, -webkit-transform 0.5s;
+
+  @media (max-width: 767px) {
+    position: relative;
+    border-radius: 0;
+  }
+
+  
+}
+
+
+@media (max-width: 768px) {
+  .quick-link-hospital.desktop {
+    display: none;
+  }
+
+  .quick-link-hospital.mobile {
+    display: block;
   }
 }
