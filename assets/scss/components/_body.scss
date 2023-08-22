@@ -317,3 +317,149 @@
     display: block;
   }
 }
+
+.about {
+  .content {
+    background-color: #f2f3f5;
+    padding: 40px;
+  }
+  h3 {
+    font-size: 14px;
+    font-weight: 700;
+    color: $text2;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: $accent;
+  }
+  p {
+    margin: 15px 0 30px 0;
+    line-height: 24px;
+  }
+  .btn-read-more {
+    line-height: 0;
+    padding: 15px 40px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: $white;
+    background: $accent;
+    box-shadow: 0px 5px 25px rgba(55, 55, 58, 0.3);
+    span {
+      font-family: $font-1;
+      font-weight: 600;
+      font-size: 16px;
+      letter-spacing: 1px;
+    }
+    i {
+      margin-left: 5px;
+      font-size: 18px;
+      transition: 0.3s;
+    }
+    &:hover {
+      background: $second;
+      box-shadow: 0px 5px 25px rgba(55, 55, 58, 0.3);
+      transform: translateY(-5px);
+      i {
+        transform: translateX(5px);
+      }
+    }
+    // &:hover i {
+    //   transform: translateX(5px);
+    // }
+  }
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Cta
+--------------------------------------------------------------*/
+.cta {
+  background: $linier-gradient, url("../img/IMG_4306.JPG") fixed center center;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.cta h3 {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #fff;
+}
+
+.cta .cta-btn {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.cta .cta-btn:hover {
+  background: #47b2e4;
+  border: 2px solid #47b2e4;
+}
+
+@media (max-width: 1024px) {
+  .cta {
+    background-attachment: scroll;
+  }
+}
+
+@media (min-width: 769px) {
+  .cta .cta-btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+}
+
+.icon-box{
+
+  //media smarphone
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.icon-box .icon {
+  margin-bottom: 10px;
+  background-color: #f2f3f5;
+  height: 4.5rem;
+  width: 4.5rem;
+}
+.icon-box .icon i {
+  color: $accent;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+ .icon-box h4 {
+  font-weight: 500;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+ .icon-box h4 a {
+  color: $white;
+  transition: ease-in-out 0.3s;
+}
+
+ .icon-box p {
+  line-height: 24px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
