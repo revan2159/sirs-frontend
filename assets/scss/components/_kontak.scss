@@ -1,0 +1,206 @@
+#contact {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  background-image: url("/frontend/img/hero2.jpg");
+  background-size: 100% 500px;
+  background-repeat: no-repeat;
+  background-position: relative;
+}
+.kontak {
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.kontak .content {
+  max-width: 800px;
+  text-align: center;
+  padding-top: 100px;
+}
+.kontak .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  top: -10;
+  color: #ffff;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+.kontak .content p {
+  font-weight: 500;
+  color: #ffff;
+  text-align: center;
+  font-weight: bold;
+}
+.kontak .card {
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.kontak .maps {
+  width: 100%;
+  height: 350px;
+  border: 1px solid #b3b0b0;
+  border-radius: 5px;
+  padding-top: 0;
+  padding: 0px;
+}
+.kontakInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-top: 21px;
+  margin: 10px;
+}
+.kontakInfo .title {
+  position: relative;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 0 0 35px;
+  color: #1e6f5c;
+  text-align: center;
+  justify-content: center;
+}
+.kontakInfo .alamat i {
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.kontakInfo .alamat h3 {
+  color: #1e6f5c;
+  padding-left: 10px;
+  font-size: 25px;
+  display: inline;
+}
+.kontakInfo .alamat p {
+  color: #1e6f5c;
+  font-size: 16px;
+  text-align: left;
+  padding-left: 62px;
+}
+.kontakInfo .telp i {
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.kontakInfo .telp h3 {
+  color: #1e6f5c;
+  padding-left: 7px;
+  font-size: 25px;
+  display: inline;
+}
+.kontakInfo .telp a {
+  color: #1e6f5c;
+  font-size: 16px;
+  padding-left: 45px;
+}
+.kontakInfo .email i {
+  font-size: 20px;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+.kontakInfo .email h3 {
+  color: #1e6f5c;
+  padding-left: 7px;
+  font-size: 25px;
+  display: inline;
+}
+.kontakInfo .email a {
+  color: #1e6f5c;
+  font-size: 16px;
+  padding-left: 45px;
+}
+.kontakInfo a {
+  color: #000;
+  text-decoration: none;
+}
+.alamat .fa-map-marker {
+  color: #1e6f5c;
+  border: 0.3vw solid #1e6f5c;
+}
+.telp .fa-phone {
+  color: #1e6f5c;
+  border: 0.3vw solid #1e6f5c;
+}
+.email .fa-envelope {
+  color: #1e6f5c;
+  border: 0.3vw solid #1e6f5c;
+}
+.kontakForm {
+  width: 100%;
+  padding: 40px;
+  background: #ffffff;
+  position: relative;
+}
+.kontakForm h2 {
+  font-size: 30px;
+  color: #1e6f5c;
+  font-weight: 500;
+}
+.kontakForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.kontakForm .inputBox input,
+.kontakForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 20px;
+  margin: 10px 0;
+  border: 1px solid #6e6e6e;
+  border-radius: 8px;
+  outline: none;
+  resize: none;
+}
+.kontakForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  padding-left: 7px;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: #000000;
+}
+.kontakForm .inputBox input:focus ~ span,
+.kontakForm .inputBox input:valid ~ span,
+.kontakForm .inputBox textarea:focus ~ span,
+.kontakForm .inputBox textarea:valid ~ span {
+  color: #1e6f5c;
+  font-size: 16px;
+  transform: translateY(-28px);
+}
+.kontakForm .inputBox input[type="submit"] {
+  width: 150px;
+  background: #1e6f5c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+
+@media (max-width: 991px) {
+  .kontak {
+    padding: 50px;
+  }
+  .kontakInfo {
+    margin-bottom: 40px;
+  }
+  .kontakInfo,
+  .kontakForm {
+    width: 100%;
+  }
+}

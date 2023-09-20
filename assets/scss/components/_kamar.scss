@@ -1,0 +1,30 @@
+#detailModal {
+  border-radius: 7px;
+  overflow: hidden;
+
+  .modal-dialog {
+    .close-btn {
+      position: absolute;
+      right: 20px;
+      top: 20px;
+      font-size: 20px;
+    }
+    .close-btn span {
+      color: #ccc;
+    }
+    .close-btn:hover span {
+      color: #000;
+    }
+    .modal-content {
+      border-top: 3px solid $accent;
+
+      .modal-body {
+        .form-group {
+          label {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+}

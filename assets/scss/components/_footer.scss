@@ -1,0 +1,178 @@
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+  color: $white;
+  --tw-bg-opacity: 1;
+  background-color: rgba(15, 23, 42, var(--tw-bg-opacity));
+  font-size: 14px;
+  padding: 80px 0 60px 0;
+  position: relative;
+
+  &:before {
+    content: "";
+    background: rgba(53, 53, 53, 0.562);
+    position: absolute;
+    inset: 0;
+  }
+
+  .footer-content {
+    .footer-info {
+      margin-bottom: 30px;
+      .footer-logo {
+        max-width: 6.5rem;
+        //boder like ring
+        border: 3px solid $dark3;
+        border-radius: 50%;
+        padding: 0.25rem;
+        img {
+          max-width: 100%;
+        }
+      }
+      .footer-name {
+        h2 {
+          font-size: 1.8rem;
+          line-height: 2rem;
+          font-weight: 700;
+          margin-bottom: 0.25rem;
+          padding-bottom: 0;
+          line-height: 1;
+          color: $white;
+        }
+        p {
+          font-size: 1.2rem;
+          color: rgba(255, 255, 255, 0.863);
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+      }
+    }
+    .footer-emergency {
+      margin-bottom: 30px;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        a {
+          color: rgba(255, 255, 255, 0.6);
+          transition: 0.3s;
+          display: inline-block;
+          line-height: 1;
+
+          &:hover {
+            color: $second;
+          }
+        }
+      }
+      .icon {
+        font-size: 1.2rem;
+        width: 2rem;
+      }
+      ul li {
+        padding: 8px 0;
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+    .footer-links {
+      margin-bottom: 30px;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        a {
+          color: rgba(255, 255, 255, 0.6);
+          transition: 0.3s;
+          display: inline-block;
+          line-height: 1;
+
+          &::before {
+            content: "\f105";
+            font-family: $fontawesome;
+            font-weight: 900;
+            display: inline-block;
+            margin-right: 10px;
+            font-size: 14px;
+            color: $second;
+            width: 20px;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.2);
+            transition: 0.3s;
+          }
+
+          &:hover {
+            color: $second;
+          }
+        }
+      }
+      ul li {
+        padding: 8px 0;
+        &:first-child {
+          padding-top: 0;
+        }
+      }
+    }
+    h3 {
+      color: $white;
+      font-size: 28px;
+      margin: 0 0 20px 0;
+      padding: 2px 0 2px 0;
+      line-height: 1;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: $white;
+      position: relative;
+      padding-bottom: 12px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 0;
+      font-family: $font-1;
+      color: $white;
+    }
+  }
+  .footer-legal {
+    .footer-line {
+      border-top: 1px solid rgb(229, 231, 235);
+    }
+    .copyright {
+      padding-top: 1rem;
+    }
+    .credits {
+      padding-top: 4px;
+      font-size: 13px;
+      a {
+        color: $text;
+      }
+    }
+    .social-links {
+      a {
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 1.2rem;
+        color: rgba(255, 255, 255, 0.7);
+        margin-right: 10px;
+        transition: 0.3s;
+        &:hover {
+          background: $second;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

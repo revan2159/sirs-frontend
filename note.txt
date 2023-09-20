@@ -1,1 +1,69 @@
 sass --watch app.scss:../css/app.css --style=compressed
+
+
+details: {
+              display: $.fn.dataTable.Responsive.display.modal({
+                header: function (row) {
+                  var data = row.data();
+                  return "Details for " + data["namakelas"];
+                },
+              }),
+            },
+
+
+
+ var modalBody = document.getElementById("detailModalBody");
+          modalBody.innerHTML = `
+            <p><strong>Kode Ruang:</strong> ${rowData.koderuang}</p>
+            <p><strong>Kapasitas:</strong> ${rowData.kapasitas}</p>
+            <p><strong>Status:</strong> ${rowData.stat}</p>
+        `;
+
+
+            var data = [
+          {
+            tersediapriawanita: 0,
+            tersedia: 0,
+            tersediawanita: 0,
+            stat: "Sudah",
+            tersediapria: 0,
+            lastupdate: "29 Aug 2023 18:51:37:240",
+            kapasitas: 2,
+            last_update: 1693309897240,
+            namakelas: "KELAS I",
+            namaruang: "PISANG AMBON",
+            koderuang: "B0043",
+            rownumber: 1,
+            kodekelas: "KL1",
+          },
+        ];
+        responsive: {
+            // Show details modals
+            details: {
+              display: $.fn.dataTable.Responsive.display.modal({
+                header: function (row) {
+                  var data = row.data();
+                  return "Details for " + data["namakelas"];
+                },
+              }),
+            },
+          },
+
+        $("#data-table").DataTable({
+          data: data,
+          
+          columns: [
+            { data: "namakelas" },
+            { data: "namaruang" },
+            { data: "kapasitas" },
+            { data: "lastupdate" },
+          ],
+          order: [[3, "asc"]], // Urutkan berdasarkan kolom pertama (Nomor)
+          rowGroup: {
+            dataSrc: (row) => {
+              let base = row.namakelas;
+
+              return `${base}`;
+            },
+          },
+        });
